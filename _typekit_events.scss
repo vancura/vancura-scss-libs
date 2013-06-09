@@ -1,0 +1,10 @@
+@mixin typekit_events() {
+    html.wf-loading & {
+        visibility: hidden;
+    }
+
+    html.wf-active &,
+    html.wf-inactive & {
+        visibility: visible;
+    }
+}
