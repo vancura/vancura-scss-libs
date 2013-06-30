@@ -1,0 +1,543 @@
+.show-for-A,
+.show-for-B-down,
+.show-for-C-down {
+    display: inherit !important;
+}
+
+
+.show-for-B,
+.show-for-B-up,
+.show-for-C,
+.show-for-C-up,
+.show-for-D {
+    display: none !important;
+}
+
+
+.hide-for-B,
+.hide-for-B-up,
+.hide-for-C,
+.hide-for-C-up,
+.hide-for-D {
+    display: inherit !important;
+}
+
+
+.hide-for-A,
+.hide-for-B-down,
+.hide-for-C-down {
+    display: none !important;
+}
+
+
+// SPECIFIC VISIBILITY FOR TABLES
+// ------------------------------
+
+table {
+    &.show-for-A,
+    &.show-for-B-down,
+    &.show-for-C-down,
+    &.hide-for-B,
+    &.hide-for-B-up,
+    &.hide-for-C,
+    &.hide-for-C-up,
+    &.hide-for-D {
+        display: table;
+    }
+}
+
+
+thead {
+    &.show-for-A,
+    &.show-for-B-down,
+    &.show-for-C-down,
+    &.hide-for-B,
+    &.hide-for-B-up,
+    &.hide-for-C,
+    &.hide-for-C-up,
+    &.hide-for-D {
+        display: table-header-group !important;
+    }
+}
+
+
+tbody {
+    &.show-for-A,
+    &.show-for-B-down,
+    &.show-for-C-down,
+    &.hide-for-B,
+    &.hide-for-B-up,
+    &.hide-for-C,
+    &.hide-for-C-up,
+    &.hide-for-D {
+        display: table-row-group !important;
+    }
+}
+
+
+tr {
+    &.show-for-A,
+    &.show-for-B-down,
+    &.show-for-C-down,
+    &.hide-for-B,
+    &.hide-for-B-up,
+    &.hide-for-C,
+    &.hide-for-C-up,
+    &.hide-for-D {
+        display: table-row !important;
+    }
+}
+
+
+td,
+th {
+    &.show-for-A,
+    &.show-for-B-down,
+    &.show-for-C-down,
+    &.hide-for-B,
+    &.hide-for-B-up,
+    &.hide-for-C,
+    &.hide-for-C-up,
+    &.hide-for-D {
+        display: table-cell !important;
+    }
+}
+
+
+// MEDIUM DISPLAYS: MEDIA-SIZE-B
+// -----------------------------
+
+@media #{size(B)} {
+    .show-for-B,
+    .show-for-B-up {
+        display: inherit !important;
+    }
+
+    .show-for-A {
+        display: none !important;
+    }
+
+    .hide-for-A {
+        display: inherit !important;
+    }
+
+    .hide-for-B,
+    .hide-for-B-up {
+        display: none !important;
+    }
+
+    table {
+        &.show-for-B,
+        &.show-for-B-up,
+        &.hide-for-A {
+            display: table;
+        }
+    }
+
+    thead {
+        &.show-for-B,
+        &.show-for-B-up,
+        &.hide-for-A {
+            display: table-header-group !important;
+        }
+    }
+
+    tbody {
+        &.show-for-B,
+        &.show-for-B-up,
+        &.hide-for-A {
+            display: table-row-group !important;
+        }
+    }
+
+    tr {
+        &.show-for-B,
+        &.show-for-B-up,
+        &.hide-for-A {
+            display: table-row !important;
+        }
+    }
+
+    td,
+    th {
+        &.show-for-B,
+        &.show-for-B-up,
+        &.hide-for-A {
+            display: table-cell !important;
+        }
+    }
+}
+
+
+// LARGE DISPLAYS: MEDIA-SIZE-C
+// ----------------------------
+
+@media #{size(C)} {
+    .show-for-C,
+    .show-for-C-up {
+        display: inherit !important;
+    }
+
+    .show-for-B,
+    .show-for-B-down {
+        display: none !important;
+    }
+
+    .hide-for-B,
+    .hide-for-B-down {
+        display: inherit !important;
+    }
+
+    .hide-for-C,
+    .hide-for-C-up {
+        display: none !important;
+    }
+
+    table {
+        &.show-for-C,
+        &.show-for-C-up,
+        &.hide-for-B,
+        &.hide-for-B-down {
+            display: table;
+        }
+    }
+
+    thead {
+        &.show-for-C,
+        &.show-for-C-up,
+        &.hide-for-B,
+        &.hide-for-B-down {
+            display: table-header-group !important;
+        }
+    }
+
+    tbody {
+        &.show-for-C,
+        &.show-for-C-up,
+        &.hide-for-B,
+        &.hide-for-B-down {
+            display: table-row-group !important;
+        }
+    }
+
+    tr {
+        &.show-for-C,
+        &.show-for-C-up,
+        &.hide-for-B,
+        &.hide-for-B-down {
+            display: table-row !important;
+        }
+    }
+
+    td,
+    th {
+        &.show-for-C,
+        &.show-for-C-up,
+        &.hide-for-B,
+        &.hide-for-B-down {
+            display: table-cell !important;
+        }
+    }
+}
+
+
+// X-LARGE DISPLAYS: MEDIA-SIZE-D AND UP
+// -------------------------------------
+
+@media #{size(D)} {
+    .show-for-D {
+        display: inherit !important;
+    }
+
+    .show-for-C,
+    .show-for-C-down {
+        display: none !important;
+    }
+
+    .hide-for-C,
+    .hide-for-C-down {
+        display: inherit !important;
+    }
+
+    .hide-for-D {
+        display: none !important;
+    }
+
+    table {
+        &.show-for-D,
+        &.hide-for-C,
+        &.hide-for-C-down {
+            display: table;
+        }
+    }
+
+    thead {
+        &.show-for-D,
+        &.hide-for-C,
+        &.hide-for-C-down {
+            display: table-header-group !important;
+        }
+    }
+
+    tbody {
+        &.show-for-D,
+        &.hide-for-C,
+        &.hide-for-C-down {
+            display: table-row-group !important;
+        }
+    }
+
+    tr {
+        &.show-for-D,
+        &.hide-for-C,
+        &.hide-for-C-down {
+            display: table-row !important;
+        }
+    }
+
+    td,
+    th {
+        &.show-for-D,
+        &.hide-for-C,
+        &.hide-for-C-down {
+            display: table-cell !important;
+        }
+    }
+}
+
+
+// ORIENTATION TARGETING
+// ---------------------
+
+.show-for-landscape,
+.hide-for-portrait {
+    display: inherit !important;
+}
+
+
+.hide-for-landscape,
+.show-for-portrait {
+    display: none !important;
+}
+
+
+table {
+    &.hide-for-landscape,
+    &.show-for-portrait {
+        display: table;
+    }
+}
+
+
+thead {
+    &.hide-for-landscape,
+    &.show-for-portrait {
+        display: table-header-group !important;
+    }
+}
+
+
+tbody {
+    &.hide-for-landscape,
+    &.show-for-portrait {
+        display: table-row-group !important;
+    }
+}
+
+
+tr {
+    &.hide-for-landscape,
+    &.show-for-portrait {
+        display: table-row !important;
+    }
+}
+
+
+td,
+th {
+    &.hide-for-landscape,
+    &.show-for-portrait {
+        display: table-cell !important;
+    }
+}
+
+
+@media #{$landscape} {
+    .show-for-landscape,
+    .hide-for-portrait {
+        display: inherit !important;
+    }
+
+    .hide-for-landscape,
+    .show-for-portrait {
+        display: none !important;
+    }
+
+    table {
+        &.show-for-landscape,
+        &.hide-for-portrait {
+            display: table;
+        }
+    }
+
+    thead {
+        &.show-for-landscape,
+        &.hide-for-portrait {
+            display: table-header-group !important;
+        }
+    }
+
+    tbody {
+        &.show-for-landscape,
+        &.hide-for-portrait {
+            display: table-row-group !important;
+        }
+    }
+
+    tr {
+        &.show-for-landscape,
+        &.hide-for-portrait {
+            display: table-row !important;
+        }
+    }
+
+    td,
+    th {
+        &.show-for-landscape,
+        &.hide-for-portrait {
+            display: table-cell !important;
+        }
+    }
+}
+
+
+@media #{$portrait} {
+    .show-for-portrait,
+    .hide-for-landscape {
+        display: inherit !important;
+    }
+
+    .hide-for-portrait,
+    .show-for-landscape {
+        display: none !important;
+    }
+
+    table {
+        &.show-for-portrait,
+        &.hide-for-landscape {
+            display: table;
+        }
+    }
+
+    thead {
+        &.show-for-portrait,
+        &.hide-for-landscape {
+            display: table-header-group !important;
+        }
+    }
+
+    tbody {
+        &.show-for-portrait,
+        &.hide-for-landscape {
+            display: table-row-group !important;
+        }
+    }
+
+    tr {
+        &.show-for-portrait,
+        &.hide-for-landscape {
+            display: table-row !important;
+        }
+    }
+
+    td,
+    th {
+        &.show-for-portrait,
+        &.hide-for-landscape {
+            display: table-cell !important;
+        }
+    }
+}
+
+
+// TOUCH-ENABLED DEVICE TARGETING
+// ------------------------------
+
+.show-for-touch {
+    display: none !important;
+}
+
+
+.hide-for-touch {
+    display: inherit !important;
+}
+
+
+.touch .show-for-touch {
+    display: inherit !important;
+}
+
+
+.touch .hide-for-touch {
+    display: none !important;
+}
+
+
+table.hide-for-touch {
+    display: table;
+}
+
+
+.touch table.show-for-touch {
+    display: table;
+}
+
+
+thead.hide-for-touch {
+    display: table-header-group !important;
+}
+
+
+.touch thead.show-for-touch {
+    display: table-header-group !important;
+}
+
+
+tbody.hide-for-touch {
+    display: table-row-group !important;
+}
+
+
+.touch tbody.show-for-touch {
+    display: table-row-group !important;
+}
+
+
+tr.hide-for-touch {
+    display: table-row !important;
+}
+
+
+.touch tr.show-for-touch {
+    display: table-row !important;
+}
+
+
+td.hide-for-touch {
+    display: table-cell !important;
+}
+
+
+.touch td.show-for-touch {
+    display: table-cell !important;
+}
+
+
+th.hide-for-touch {
+    display: table-cell !important;
+}
+
+
+.touch th.show-for-touch {
+    display: table-cell !important;
+}
