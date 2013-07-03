@@ -2,8 +2,8 @@
   "name": "vancura-scss-libs",
   "title": "Vancura SCSS Libraries",
   "author": "Vaclav Vancura",
-  "version": "1.0.0-alpha",
-  "_id": "vancura-scss-libs@1.0.0-alpha",
+  "version": "1.0.0",
+  "_id": "vancura-scss-libs@1.0.0",
   "keywords": [
     "component",
     "css",
