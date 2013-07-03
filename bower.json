@@ -1,0 +1,24 @@
+{
+  "name": "vancura-scss-libs",
+  "title": "Vancura SCSS Libraries",
+  "author": "Vaclav Vancura",
+  "version": "1.0.0-alpha",
+  "_id": "vancura-scss-libs@1.0.0-alpha",
+  "keywords": [
+    "component",
+    "css",
+    "scss",
+    "library"
+  ],
+  "main": [
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vancura/vancura-scss-libs.git"
+  }
+}
