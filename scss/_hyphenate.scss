@@ -1,4 +1,4 @@
-@mixin hyphenate() {
+%hyphenate {
     -ms-word-break: break-all;
     word-break: break-all;
 

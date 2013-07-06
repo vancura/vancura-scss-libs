@@ -1,4 +1,4 @@
-@mixin typekit_events() {
+%typekit-events {
     html.wf-loading & {
         visibility: hidden;
     }
