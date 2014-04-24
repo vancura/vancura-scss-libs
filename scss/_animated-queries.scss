@@ -1,5 +1,0 @@
-%animated-queries {
-    @include prefixer(animation-property, width, webkit moz o spec);
-    @include prefixer(animation-property, height, webkit moz o spec);
-    @include prefixer(transition-duration, 1s, webkit moz o spec);
-}
