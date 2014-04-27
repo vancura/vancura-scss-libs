@@ -1,6 +1,11 @@
+@import "clearfix";
 @import "debug";
+@import "hidpi";
 @import "hyphenate";
+@import "kerning";
 @import "ligatures";
 @import "triangle";
 @import "typekit-events";
-@import "clearfix";
+
+// Optional stuff
+// @import "visibility";
