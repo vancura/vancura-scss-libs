@@ -1,10 +1,11 @@
 %typekit-events {
-    html.wf-loading & {
-        visibility: hidden;
-    }
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s 0.5s ease-out;
 
     html.wf-active &,
     html.wf-inactive & {
         visibility: visible;
+        opacity: 1;
     }
 }
