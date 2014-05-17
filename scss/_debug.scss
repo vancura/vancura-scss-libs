@@ -10,4 +10,8 @@
     @if($color == "blue") {
         background: rgba(0, 0, 255, 0.5) !important;
     }
+
+    @if($color == "gray") {
+        background: rgba(128, 128, 128, 0.5) !important;
+    }
 }
