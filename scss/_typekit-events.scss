@@ -1,10 +1,10 @@
 %typekit-events {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.2s 0.4s ease-out;
+    transition: opacity .2s .4s ease-out;
 
-    html.wf-active &,
-    html.wf-inactive & {
+    .wf-active &,
+    .wf-inactive & {
         visibility: visible;
         opacity: 1;
     }

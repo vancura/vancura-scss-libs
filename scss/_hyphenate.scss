@@ -1,9 +1,7 @@
 // noinspection CssUnknownProperty, CssOverwrittenProperties
 %hyphenate {
     word-break: break-all;
-
-    // non standard for webkit
-    word-break: break-word;
+    word-break: break-word; // non standard for webkit
 
     hyphens: auto;
 
